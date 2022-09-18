@@ -36,4 +36,11 @@ internal class SolutionTest {
             listNodeToList(Solution.reverseList(listToListNode(listOf(1, 2, 3, 4, 5)))).toIntArray()
         )
     }
+
+    @Test
+    fun testMaxProfit() {
+        assertEquals(5, Solution.maxProfit(intArrayOf(7, 1, 5, 3, 6, 4)))
+        assertEquals(0, Solution.maxProfit(intArrayOf(7, 6, 4, 3, 1)))
+    }
+
 }
